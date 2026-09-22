@@ -1,0 +1,56 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/generic-registry",
+  "capability": "Generic typed string-keyed registry with central visibility, duplicate detection, and disable/enable per registry instance.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "1.0.12",
+  "description": "Generic typed string-keyed registry with central visibility, duplicate detection, and disable/enable per registry instance.",
+  "imports": {
+    "#generic-registry/*": "./src/*",
+    "#generic-registry/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./create-registry": {
+      "types": "./src/create-registry.d.ts",
+      "default": "./src/create-registry.ts"
+    },
+    "./create-registry.ts": {
+      "types": "./src/create-registry.d.ts",
+      "default": "./src/create-registry.ts"
+    },
+    "./registry": {
+      "types": "./src/registry.d.ts",
+      "default": "./src/registry.ts"
+    },
+    "./registry.ts": {
+      "types": "./src/registry.d.ts",
+      "default": "./src/registry.ts"
+    },
+    "./types": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    },
+    "./types.ts": {
+      "types": "./src/types.d.ts",
+      "default": "./src/types.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-generic-registry",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
